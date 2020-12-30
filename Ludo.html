@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Ludo</title>
+    <script type="text/javascript" src="ludo.js"></script>
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="ludo.css">
+    <link rel="stylesheet" type="text/css" href="argon.css">
+    <link rel="stylesheet" type="text/css" href="font-awesome.css">
+</head>
+
+<body>
+    <!--    <div class="ludo">
+    <div class="game">
+             <div class="dice p-absolute l--1 t-1 b-green">
+                <div class="dice-inner bg-white p-3">
+                  <i class="fa fa-user green fa-4x "></i>
+                </div>
+             </div>
+        <div class="house green bg-green">
+            <div class="box">
+                <div class="square square-one bg-green p-2"><i class="fa fa-circle fa-2x b-white c-green"></i></div>
+                <div class="square square-two bg-green p-2"><i class="fa fa-circle fa-2x b-white c-green"></i></div>
+                <div class="square square-three bg-green p-2"><i class="fa fa-circle fa-2x b-white c-green"></i></div>
+                <div class="square square-four bg-green p-2"><i class="fa fa-circle fa-2x b-white c-green"></i></div>
+            </div>
+        </div>
+            <div class="dice b-yellow p-absolute r--1 t-1">
+        <div class="dice-inner bg-white p-3">
+             <i class="fa fa-user c-yellow fa-4x"></i>
+        </div>
+    </div>
+        <div class="house yellow bg-yellow" style="right: 0">
+            <div class="box">
+                <div class="square square-one bg-yellow p-2"><i class="fa fa-circle fa-2x b-white c-yellow"></i></div>
+                <div class="square square-two bg-yellow p-2"><i class="fa fa-circle fa-2x b-white c-yellow"></i></div>
+                <div class="square square-three bg-yellow p-2"><i class="fa fa-circle fa-2x b-white c-yellow"></i></div>
+                <div class="square square-four bg-yellow p-2"><i class="fa fa-circle fa-2x b-white c-yellow"></i></div>
+            </div>
+        </div>
+             <div class="dice b-red p-absolute l--1 t-2">
+                <div class="dice-inner bg-white p-3">
+                     <i class="fa fa-user c-red fa-4x"></i>
+                </div>
+            </div>
+        <div class="house red bg-red" style="bottom: 0">
+            <div class="box">
+                <div class="square square-one bg-red p-2 "><i class="fa fa-circle fa-2x b-white c-red"></i></div>
+                <div class="square square-two bg-red p-2"><i class="fa fa-circle fa-2x b-white c-red"></i></div>
+                <div class="square square-three bg-red p-2"><i class="fa fa-circle fa-2x b-white c-red"></i></div>
+                <div class="square square-four bg-red p-2"><i class="fa fa-circle fa-2x b-white c-red"></i></div>
+            </div>
+  
+        </div>
+          <div class="dice b-blue p-absolute r--1 t-2">
+                <div class="dice-inner bg-white p-3">
+                     <i class="fa fa-user c-blue fa-4x"></i>
+                </div>
+           </div>
+        <div class="house blue bg-blue" style="bottom:0; right:0;">
+            <div class="box">
+                <div class="square square-one bg-blue p-2"><i class="fa fa-circle fa-2x b-white c-blue"></i></div>
+                <div class="square square-two bg-blue p-2"><i class="fa fa-circle fa-2x b-white c-blue"></i></div>
+                <div class="square square-three bg-blue p-2"><i class="fa fa-circle fa-2x b-white c-blue"></i></div>
+                <div class="square square-four bg-blue p-2"><i class="fa fa-circle fa-2x b-white c-blue"></i></div>
+
+            </div>
+        </div>
+       
+    </div>
+    <div class="home"></div>
+    <div class="cells" style="top:40%;">
+    </div>
+    <div class="cells g-start" style="top:40%; left: 13.32%; ">
+
+</div> -->
+    <div class="game">
+
+        <!-- <i class="fa fa-user c-green fa-4x "></i> -->
+        <!-- <div class="gatti p-absolute l--2 t-1 b-green">
+            <div class="row gatti-inner">
+            </div>
+        </div> -->
+        <div class="house green">
+            <div class="box">
+                <div class="square square-one green p-1"><i class="fa fa-box fa-2x b-white bg-green"></i></div>
+                <div class="square square-two green p-1"><i class="fa fa-box fa-2x b-white bg-green"></i></div>
+                <div class="square square-three green p-1"><i class="fa fa-box fa-2x b-white bg-green"></i></div>
+                <div class="square square-four green p-1"><i class="fa fa-box fa-2x b-white bg-green"></i></div>
+            </div>
+        </div>
+        <div class="dice b-yellow p-absolute r--2 t-1">
+            <div class="dice-inner bg-white p-3">
+                <i class="fa fa-user c-yellow fa-4x"></i>
+            </div>
+        </div>
+        <div class="house yellow" style="right: 0">
+            <div class="box">
+                <div class="square square-one yellow p-1"><i class="fa fa-box fa-2x b-white bg-yellow"></i></div>
+                <div class="square square-two yellow p-1"><i class="fa fa-box fa-2x b-white bg-yellow"></i></div>
+                <div class="square square-three yellow p-1"><i class="fa fa-box fa-2x b-white bg-yellow"></i></div>
+                <div class="square square-four yellow p-1"><i class="fa fa-box fa-2x b-white bg-yellow"></i></div>
+            </div>
+        </div>
+        <div class="dice b-red p-absolute l--2 t-2">
+            <div class="dice-inner bg-white p-3">
+                <i class="fa fa-user c-red fa-4x"></i>
+            </div>
+        </div>
+        <div class="house red" style="bottom: 0">
+            <div class="box">
+                <div class="square square-one red p-1"><i class="fa fa-box fa-2x b-white bg-red"></i></div>
+                <div class="square square-two red p-1"><i class="fa fa-box fa-2x b-white bg-red"></i></div>
+                <div class="square square-three red p-1"><i class="fa fa-box fa-2x b-white bg-red"></i></div>
+                <div class="square square-four red p-1"><i class="fa fa-box fa-2x b-white bg-red"></i></div>
+            </div>
+        </div>
+        <div class="dice b-blue p-absolute r--2 t-2">
+            <div class="dice-inner bg-white p-3">
+                <i class="fa fa-user c-blue fa-4x"></i>
+            </div>
+        </div>
+        <div class="house blue" style="bottom: 0;right: 0">
+            <div class="box">
+                <div class="square square-one blue p-1"><i class="fa fa-box fa-2x b-white bg-blue"></i></div>
+                <div class="square square-two blue p-1"><i class="fa fa-box fa-2x b-white bg-blue"></i></div>
+                <div class="square square-three blue p-1"><i class="fa fa-box fa-2x b-white bg-blue"></i></div>
+                <div class="square square-four blue p-1"><i class="fa fa-box fa-2x b-white bg-blue"></i></div>
+            </div>
+        </div>
+
+        <div class="home"></div>
+        <div class="cells" style="top: 40%;"></div>
+        <div class="cells g-start" style="top: 40%;left:6.66%;"><i class="fa fa-star-o fa-2x p-2 c-white"></i></div>
+        <div class="cells" style="top: 40%;left:13.32%;"><i class="fa fa-box fa-2x b-white bg-red"></i>
+            <</div> <div class="cells" style="top: 40%;left:19.98%;">
+        </div>
+        <div class="cells" style="top: 40%;left:26.64%;"></div>
+        <div class="cells" style="top: 40%;left:33.3%;"></div>
+
+        <div class="cells" style="top: 0;left:40%;"></div>
+        <div class="cells" style="top: 6.66%;left:40%;"></div>
+        <div class="cells" style="top: 13.32%;left:40%;"><i class="fa fa-star-o fa-3x "></i></div>
+        <div class="cells" style="top: 19.98%;left:40%;"></div>
+        <div class="cells" style="top: 26.64%;left:40%;"></div>
+        <div class="cells" style="top: 33.3%;left:40%;"></div>
+
+        <div class="cells" style="top: 0;left:46.66%;"></div>
+        <div class="cells yellow" style="top: 6.66%;left:46.66%;"></div>
+        <div class="cells yellow" style="top: 13.32%;left:46.66%;"></div>
+        <div class="cells yellow" style="top: 19.98%;left:46.66%;"></div>
+        <div class="cells yellow" style="top: 26.64%;left:46.66%;"></div>
+        <div class="cells yellow" style="top: 33.3%;left:46.66%;"></div>
+
+        <div class="cells" style="top: 0;left:53.32%;"></div>
+        <div class="cells y-start" style="top: 6.66%;left:53.32%;"><i class="fa fa-star-o fa-2x p-2 c-white"></i></div>
+        <div class="cells" style="top: 13.32%;left:53.32%;"></div>
+        <div class="cells" style="top: 19.98%;left:53.32%;"></div>
+        <div class="cells" style="top: 26.64%;left:53.32%;"></div>
+        <div class="cells" style="top: 33.3%;left:53.32%;"></div>
+
+        <div class="cells" style="top: 40%; right: 33.3%"></div>
+        <div class="cells" style="top: 40%;right:26.64%;"></div>
+        <div class="cells" style="top: 40%;right:19.98%;"></div>
+        <div class="cells " style="top: 40%;right:13.32%;"><i class="fa fa-star-o fa-3x "></i></div>
+        <div class="cells" style="top: 40%;right:6.66%;"></div>
+        <div class="cells" style="top: 40%;right:0;"></div>
+
+        <div class="cells blue" style="top: 46.66%; right: 33.3%"></div>
+        <div class="cells blue" style="top: 46.66%;right:26.64%;"></div>
+        <div class="cells blue" style="top: 46.66%;right:19.98%;"></div>
+        <div class="cells blue" style="top: 46.66%;right:13.32%;"></div>
+        <div class="cells blue" style="top: 46.66%;right:6.66%;"></div>
+        <div class="cells" style="top: 46.66%;right:0;"></div>
+
+        <div class="cells" style="top: 53.32%; right: 33.3%"></div>
+        <div class="cells" style="top: 53.32%;right:26.64%;"></div>
+        <div class="cells" style="top: 53.32%;right:19.98%;"></div>
+        <div class="cells" style="top: 53.32%;right:13.32%;"></div>
+        <div class="cells b-start" style="top: 53.32%;right:6.66%;"><i class="fa fa-star-o fa-2x p-2 c-white"></i></div>
+        <div class="cells" style="top: 53.32%;right:0;"></div>
+
+        <div class="cells" style="bottom: 0;left:53.32%;"></div>
+        <div class="cells" style="bottom: 6.66%;left:53.32%;"></div>
+        <div class="cells " style="bottom: 13.32%;left:53.32%;"><i class="fa fa-star-o fa-3x "></i></div>
+        <div class="cells" style="bottom: 19.98%;left:53.32%;"></div>
+        <div class="cells" style="bottom: 26.64%;left:53.32%;"></div>
+        <div class="cells" style="bottom: 33.3%;left:53.32%;"></div>
+
+        <div class="cells" style="bottom: 0;left:46.66%;"></div>
+        <div class="cells red " style="bottom: 6.66%;left:46.66%;"></div>
+        <div class="cells red" style="bottom: 13.32%;left:46.66%;"></div>
+        <div class="cells red" style="bottom: 19.98%;left:46.66%;"></div>
+        <div class="cells red" style="bottom: 26.64%;left:46.66%;"></div>
+        <div class="cells red" style="bottom: 33.3%;left:46.66%;"></div>
+
+        <div class="cells" style="bottom: 0;left:40%;"></div>
+        <div class="cells r-start" style="bottom: 6.66%;left:40%;"><i class="fa fa-star-o fa-2x p-2 c-white"></i></div>
+        <div class="cells" style="bottom: 13.32%;left:40%;"></div>
+        <div class="cells" style="bottom: 19.98%;left:40%;"></div>
+        <div class="cells" style="bottom: 26.64%;left:40%;"></div>
+        <div class="cells" style="bottom: 33.3%;left:40%;"></div>
+
+        <div class="cells" style="top: 53.32%; left: 33.3%"></div>
+        <div class="cells" style="top: 53.32%;left:26.64%;"></div>
+        <div class="cells" style="top: 53.32%;left:19.98%;"></div>
+        <div class="cells " style="top: 53.32%;left:13.32%;"><i class="fa fa-star-o fa-3x "></i></div>
+        <div class="cells" style="top: 53.32%;left:6.66%;"></div>
+        <div class="cells" style="top: 53.32%;left:0;"></div>
+
+        <div class="cells green" style="top: 46.66%;left: 33.3%"></div>
+        <div class="cells green" style="top: 46.66%;left:26.64%;"></div>
+        <div class="cells green" style="top: 46.66%;left:19.98%;"></div>
+        <div class="cells green" style="top: 46.66%;left:13.32%;"></div>
+        <div class="cells green" style="top: 46.66%;left:6.66%;"></div>
+        <div class="cells" style="top: 46.66%;left:0;"></div>
+
+    </div>
+    <script type="text/javascript" src="script.js">
+    </script>
+</body>
+
+</html>
